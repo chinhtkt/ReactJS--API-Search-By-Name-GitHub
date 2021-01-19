@@ -5,7 +5,6 @@ import { FaGithub, FaGlobeAfrica} from 'react-icons/fa';
 import { AiOutlineFork, AiOutlineStar } from "react-icons/ai";
 import { GoIssueOpened } from "react-icons/go";
 
-
 const DisplayData = ({data, reposi}) => {
     return (
        <div>
@@ -22,9 +21,9 @@ const DisplayData = ({data, reposi}) => {
         <div key={repo.name}>
         <ListGroupItem action href={repo.html_url}><FaGithub/><h5 className='color'>{repo.name}</h5><br/>
         <p>{repo.description}</p><br></br><strong><FaGlobeAfrica/> {repo.language}</strong>&ensp;
-        <span><AiOutlineFork/> {repo.forks}</span>&ensp;
-        <span><AiOutlineStar/> {repo.stargazers_count}</span>&ensp;
-        <span><GoIssueOpened/> {repo.open_issues}</span>
+        <span><AiOutlineFork/>{repo.forks}</span>&ensp;
+        <span><AiOutlineStar/>{repo.stargazers_count}</span>&ensp;
+        <span><GoIssueOpened/>{repo.open_issues}</span>
         </ListGroupItem>
         </div>
        ))}
